@@ -11,7 +11,9 @@
       let name = prompt("Enter Your Name");
       let obtmarks = prompt(`Hey ${name} Enter Your Obtained Marks`);
       let totalmarks = 100;
-      alert("Your Result Show in Both Alert and Console Panel.Press Ok")
+      
+      alert("Your Result Show in Both Alert and Console Panel. Please Enter Integar between 1 and 100. Press Ok")
+      alert("")
       let Percentage= (obtmarks / totalmarks) * 100
     //   alert("For Result open Console Panel")
       console.log(`Your Name is ${name} Marks Obtained ${obtmarks}`);
@@ -76,7 +78,7 @@
       } else if (obtmarks > 100) {
         console.log(`Enter Number Less then or Equals to 100`);
       } else {
-        console.log(`Enter Valid Input. Please Integar between 1 and 100`);
+        console.log(`Enter Valid Input. Already told you Please Enter Integar between 1 and 100`);
         alert(`Enter Valid Input`)
       }
     </script>
