@@ -6,106 +6,130 @@
     <title>Document</title>
   </head>
   <body>
+
+    <h1></h1>
     <script>
-      let name = prompt("Enter Your Name");
-      let obtmarks = prompt(`Hey ${name} Enter Your Obtained Marks. For your Result and Percentage`);
-      let totalmarks = 100;
+      // Marks calculator
+      // let name = prompt("Enter Your Name");
+      // let obtmarks = prompt(
+      //   `Hey ${name} Enter Your Obtained Marks. For your Result and Percentage`
+      // );
+      // let totalmarks = 100;
 
-      alert(
-        "Your Result Show in Both Alert and Console Panel. Please Enter Integar between 1 and 100. Press Ok"
-      );
+      // alert(
+      //   "Your Result Show in Both Alert and Console Panel. Please Enter Integar between 1 and 100. Press Ok"
+      // );
 
-      let Percentage = (obtmarks / totalmarks) * 100;
-      //   alert("For Result open Console Panel")
-      console.log(`Your Name is ${name} Marks Obtained ${obtmarks}`);
-      if (obtmarks >= 90 && obtmarks <= 100) {
-        console.log(
-          `You are Genius .You got A+ Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert(
-          `You are Genius .You got A+ Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert("Thank You for using our Service");
-      } else if (obtmarks >= 80 && obtmarks < 90) {
-        console.log(
-          `Great You Got B+ Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert(
-          `Great You Got B+ Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert("Thank You for using our Service");
-      } else if (obtmarks >= 70 && obtmarks < 80) {
-        console.log(
-          `Good You Got B Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert(
-          `Good You Got B Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert("Thank You for using our Service");
-      } else if (obtmarks >= 60 && obtmarks < 70) {
-        console.log(
-          `You Got C Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert(
-          `You Got C Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert("Thank You for using our Service");
-      } else if (obtmarks >= 50 && obtmarks < 60) {
-        console.log(
-          `You Got C- Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          }`
-        );
-        alert(
-          `You Got C- Grade.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          }`
-        );
-        alert("Thank You for using our Service");
-      } else if (obtmarks >= 1 && obtmarks < 50) {
-        console.log(
-          `Better Luck Hard Next Time. You failed your exam.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert(
-          `Better Luck Hard Next Time. You failed your exam.Your Percentage is = ${
-            (obtmarks / totalmarks) * 100
-          } out Of  ${totalmarks}`
-        );
-        alert("Thank You for using our Service");
-      } else if (obtmarks <= 0) {
-        console.log(`Enter value Greater then 0`);
-        alert(`Enter value Greater then 0`);
-        alert("Thank You for using our Service");
-      } else if (obtmarks > 100) {
-        console.log(`Enter Number Less then or Equals to 100`);
-      } else {
-        console.log(
-          `Enter Valid Input. Already told you Please Enter Integar between 1 and 100`
-        );
-        alert(
-          `Enter Valid Input. Already told you Please Enter Integar between 1 and 100`
-        );
-       alert("Thank You for using our Service");
-      }
-      
+      // let Percentage = (obtmarks / totalmarks) * 100;
+      // //   alert("For Result open Console Panel")
+      // console.log(`Your Name is ${name} Marks Obtained ${obtmarks}`);
+      // if (obtmarks >= 90 && obtmarks <= 100) {
+      //   console.log(
+      //     `You are Genius .You got A+ Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert(
+      //     `You are Genius .You got A+ Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks >= 80 && obtmarks < 90) {
+      //   console.log(
+      //     `Great You Got B+ Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert(
+      //     `Great You Got B+ Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks >= 70 && obtmarks < 80) {
+      //   console.log(
+      //     `Good You Got B Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert(
+      //     `Good You Got B Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks >= 60 && obtmarks < 70) {
+      //   console.log(
+      //     `You Got C Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert(
+      //     `You Got C Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks >= 50 && obtmarks < 60) {
+      //   console.log(
+      //     `You Got C- Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     }`
+      //   );
+      //   alert(
+      //     `You Got C- Grade.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     }`
+      //   );
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks >= 1 && obtmarks < 50) {
+      //   console.log(
+      //     `Better Luck Hard Next Time. You failed your exam.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert(
+      //     `Better Luck Hard Next Time. You failed your exam.Your Percentage is = ${
+      //       (obtmarks / totalmarks) * 100
+      //     } out Of  ${totalmarks}`
+      //   );
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks <= 0) {
+      //   console.log(`Enter value Greater then 0`);
+      //   alert(`Enter value Greater then 0`);
+      //   alert("Thank You for using our Service");
+      // } else if (obtmarks > 100) {
+      //   console.log(`Enter Number Less then or Equals to 100`);
+      // } else {
+      //   console.log(
+      //     `Enter Valid Input. Already told you Please Enter Integar between 1 and 100`
+      //   );
+      //   alert(
+      //     `Enter Valid Input. Already told you Please Enter Integar between 1 and 100`
+      //   );
+      //   alert("Thank You for using our Service");
+      // }
+      // Body color changer
+      // let heading = document.querySelector('h1');
+      //   let body = document.body;
+      //   const colors = ['red', 'green', 'orange', 'yellow', 'blue', 'maroon', 'black', 'gray', 'purple', 'pink']
+      //   let count = 0
+      //   window.addEventListener('click', () => {
+      //       if (count > colors.length - 1) {
+      //           count = 0
+      //       }
+      //       heading.innerHTML = colors[count]
+      //       if (colors[count] == 'black') {
+      //           heading.style.color = 'white'
+      //       } else {
+      //           heading.style.color = 'black'
+
+      //       }
+      //       body.style.backgroundColor = colors[count]
+      //       count++
+      //   })
+
     </script>
   </body>
 </html>
